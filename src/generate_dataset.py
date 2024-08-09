@@ -1,7 +1,4 @@
-# Importing the dependencies
-import numpy as np
-import cv2
-import os
+from src.dependencies import *
 
 # Defining the function to generate the dataset
 def generate_custom_shapes_dataset(num_samples_per_class=1000, output_directory='./dataset'):
