@@ -65,6 +65,38 @@ The project focuses on the classification and regularization of 2D curves, parti
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!--HHS-->
+## Running the App
+
+Excited to explore the application? Let's get it up and running on your local machine!
+
+### Prerequisites:
+
+* **Git:** Ensure you have Git installed to clone the repository.
+* **Python:** You'll need Python to manage the project's dependencies and run Streamlit.
+* **Streamlit:** Install Streamlit using `pip install streamlit`.
+
+### Steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository_url>
+    cd CURVETOPIA_DA
+    ```
+
+2. **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the App:**
+    ```bash
+    streamlit run ./src/app.py
+    ```
+
+4. **Open the App:**
+    The app will open in your default browser on port 8501. You can now interact with the application and explore its features.
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
