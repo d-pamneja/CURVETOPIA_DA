@@ -18,16 +18,7 @@
 <h3 align="center">Curvetopia - Gensolve Adobe 2024</h3>
 
   <p align="center">
-    This project is a part of the Gensolve Adobe 2024 Hackathon. It takes in input the doodle of a shape and return the predicted shape from 
-    the following shapes : 
-<br />
-    - Line
-    - Circle
-    - Ellipse
-    - Rectangle
-    - Regular Polygon
-    - Rounded Rectangle
-    - Star 
+    This project is a part of the Gensolve Adobe 2024 Hackathon. It takes in input the doodle of a shape and return the predicted shape,
     <br />
     <a href="https://github.com/d-pamneja/CURVETOPIA_DA/issues">Report Bug</a>
     ·
