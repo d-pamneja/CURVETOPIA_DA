@@ -21,13 +21,13 @@
     This project is a part of the Gensolve Adobe 2024 Hackathon. It takes in input the doodle of a shape and return the predicted shape from 
     the following shapes : 
     
-    * Line
-    * Circle
-    * Ellipse
-    * Rectangle
-    * Regular Polygon
-    * Rounded Rectangle
-    * Star 
+    - Line
+    - Circle
+    - Ellipse
+    - Rectangle
+    - Regular Polygon
+    - Rounded Rectangle
+    - Star 
 <br />
     <br />
     <a href="https://github.com/d-pamneja/CURVETOPIA_DA/issues">Report Bug</a>
