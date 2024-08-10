@@ -38,6 +38,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#running-the-app">Getting started</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -65,7 +66,7 @@ The project focuses on the classification and regularization of 2D curves, parti
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!--HHS-->
+<!-- GETTING STARTED -->
 ## Running the App
 
 Excited to explore the application? Let's get it up and running on your local machine!
@@ -81,7 +82,7 @@ Excited to explore the application? Let's get it up and running on your local ma
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/d-pamneja/CURVETOPIA_DA
-    cd CURVETOPIA_DA
+   cd CURVETOPIA_DA
     ```
 
 2. **Install Dependencies:**
