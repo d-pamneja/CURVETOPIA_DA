@@ -80,7 +80,7 @@ Excited to explore the application? Let's get it up and running on your local ma
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/d-pamneja/CURVETOPIA_DA
     cd CURVETOPIA_DA
     ```
 
