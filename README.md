@@ -4,7 +4,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 <!-- [![MIT License][license-shield]][license-url] -->
 
 
@@ -12,15 +12,23 @@
 <br />
 <div align="center">
   <a href="https://github.com/d-pamneja/CURVETOPIA_DA">
-    <img src="static/logo.jpg" alt="Logo" width="500" height="300">
+    <img src="static/logo.png" alt="Logo" width="500" height="300">
   </a>
 
-<h3 align="center">Source Code Analysis Application using OpenAI</h3>
+<h3 align="center">Curvetopia - Gensolve Adobe 2024</h3>
 
   <p align="center">
-    The aim of this project is to take any given <code class="language-python">python</code> code in a repository and analyze it via a chatbot using 
-    OpenAI models and Langchain API.
-    <br />
+    This project is a part of the Gensolve Adobe 2024 Hackathon. It takes in input the doodle of a shape and return the predicted shape from 
+    the following shapes : 
+    
+    * Line
+    * Circle
+    * Ellipse
+    * Rectangle
+    * Regular Polygon
+    * Rounded Rectangle
+    * Star 
+<br />
     <br />
     <a href="https://github.com/d-pamneja/CURVETOPIA_DA/issues">Report Bug</a>
     ·
@@ -40,7 +48,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#deployment">Deployment</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -53,11 +60,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-In this project, we have leveraged the capabilities of OpenAI models and Langchain API to analyze the source code of a given Python repository. The application allows users to input the URL of a GitHub repository containing Python code and receive detailed insights and analysis via a chatbot interface. The chatbot interacts with the user, providing information on the code structure, functions, variables, and potential improvements. This project aims to simplify the process of code analysis and provide valuable feedback to developers, educators, and learners. By utilizing advanced natural language processing (NLP) models, the application can extract key information from the code and generate meaningful insights for the user.
-
-The user can interact with the chatbot to ask questions about the code, understand its functionality, and receive suggestions for optimization. The chatbot uses OpenAI models to process the user's queries and provide accurate responses based on the code analysis. The Langchain API is used to extract relevant information from the code and generate insights that can help improve the code quality and performance. The application is designed to be user-friendly and intuitive, allowing users to easily input the GitHub repository URL and receive detailed analysis results in real-time.
-
-Along with that, the user can enter "clear" to delete the previous repository and enter a new database and cloned repository. With this, the user can analyze multiple repositories in a single session. The chatbot provides a conversational interface that guides the user through the code analysis process and helps them understand the code structure, logic, and potential areas for improvement. The application is designed to be interactive, informative, and engaging, making it an ideal tool for developers, educators, and learners who want to gain insights into Python code and enhance their programming skills.
+The project focuses on the classification and regularization of 2D curves, particularly in the context of hand-drawn shapes and doodles. The primary goal is to develop algorithms that can accurately identify and categorize various geometric shapes within a given set of curves. The project emphasizes the ability to handle imperfect and irregular shapes, recognizing that hand-drawn doodles often deviate from ideal geometric forms. The classification process involves analyzing the geometric properties of the input curves and applying pattern recognition techniques to distinguish between different shape categories, such as lines, circles, ellipses, rectangles, polygons, and stars. The project's focus on shape classification and regularization contributes to the broader field of computer vision and image analysis, with potential applications in areas like digital art, design tools, and educational software.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,101 +68,10 @@ Along with that, the user can enter "clear" to delete the previous repository an
 
 ### Built With
 
-* [![openai][openai]][openai-url]
-* [![langchain][langchain]][langchain-url]
-* [![ChromaDB][chromadb]][chromadb-url]
-* [![flask][flask]][flask-url]
-* [![amazonaws][amazonaws]][amazonaws-url]
+* [![opencv][opencv]][opencv-url]
+* [![scikit-learn][scikit-learn]][scikit-learn-url]
+* [![numpy][numpy]][numpy-url]
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- DEPLOYMENT -->
-## Deployment
-The application is deployed via AWS EC2 instance. That can be achieved by following the steps below:
-
-1. **Create an AWS EC2 Instance**: 
-    - Launch an EC2 instance with the desired configuration.
-    - Ensure that the security group associated with the instance allows inbound traffic on port 8501 (Streamlit default port).
-
-2. **SSH into the EC2 Instance**:
-    - Use the SSH key pair associated with the EC2 instance to connect to the instance.
-
-3. **Install Required Packages**:
-    - Install the necessary packages and dependencies on the EC2 instance.
-    - Ensure that Python, Streamlit, and other required libraries are installed.
-    - It can be done using the following commands:
-    <br>
-    <sh>
-
-    ```
-    sudo apt-get update
-    ```
-
-    ```
-    sudo apt upgrade -y
-    ```
-
-    ```
-    sudo apt install python3-pip git curl unzip tar make sudo vim wget -y
-    ```
-
-    ``` 
-    git clone "Your-repository"
-    ```
-
-    ```
-    cd "Your-repository"
-    ```
-
-    ```
-    pip3 install -r requirements.txt
-    ```
-    </sh>
-
-
-4. **Initialize the OPENAI API Key**:
-    - Set up the OpenAI API key on the EC2 instance.
-    - Create a `.env` file in the project directory and add the OpenAI API key.
-    - The `.env` file should contain the following line:
-    <br>
-    <sh>
-
-    ```
-    OPENAI_API_KEY=your_openai_api_key
-    ```
-    </sh>
-
-5. **Run the Streamlit Application**:
-    - Run the Streamlit application on the EC2 instance.
-    - Use the following command to start the Streamlit server:
-    <br>
-    <sh>
-
-    ```
-    python3 app.py
-    ```
-    </sh>
-
-
-6. **Access the Application**:
-    - Access the Streamlit application by visiting the public IP address of the EC2 instance followed by port 8501.
-    - The application should be accessible via a web browser.
-    - The URL format is as follows:
-
-    <sh>
-    
-    ```
-    http://"Your-EC2-Public-IP":8501
-    ```
-    </sh>
-
-The application should now be up and running on the AWS EC2 instance, allowing users to generate quiz questions from text or PDF documents. The screenshots for the instance are shown below:
-
-![EC2_screenshot](static/ec2_screenshot.png)
-![instance_screenshot](static/instance_screenshot.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +107,8 @@ Thank you for being a part of this journey!
 ## Contact
 
 Dhruv Pamneja - dpamneja@gmail.com / 21f1001719@ds.study.iitm.ac.in
-Abhay Chaudary - 
+<br>
+Abhay Chaudary - https://github.com/Abhayindia
 
 Project Link: [https://github.com/d-pamneja/CURVETOPIA_DA](https://github.com/d-pamneja/CURVETOPIA_DA)
 
@@ -246,5 +159,9 @@ Project Link: [https://github.com/d-pamneja/CURVETOPIA_DA](https://github.com/d-
 [scikit-learn-url]: https://scikit-learn.org/stable/
 [openai]: https://img.shields.io/badge/OpenAI-5A5A5A?style=for-the-badge&logo=openai&logoColor=white
 [openai-url]: https://openai.com
+[opencv]: https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white
+[opencv-url]: https://opencv.org
+[numpy]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
+[numpy-url]: https://numpy.org
 [langchain]: https://img.shields.io/badge/Langchain-FF2D20?style=for-the-badge&logo=langchain&logoColor=white
 [langchain-url]: https://langchain.com
