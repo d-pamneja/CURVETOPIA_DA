@@ -92,7 +92,7 @@ Excited to explore the application? Let's get it up and running on your local ma
 
 3. **Run the App:**
     ```bash
-    streamlit run ./src/app.py
+    streamlit run app.py
     ```
 
 4. **Open the App:**
